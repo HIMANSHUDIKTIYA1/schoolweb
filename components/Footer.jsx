@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Footer() {
     return (
       <footer className="bg-gray-800 text-white py-16 px-8">
@@ -25,7 +26,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">हमें फ़ॉलो करें</h3>
             <div className="flex space-x-6">
-              <a
+              <Link
                 href="https://instagram.com"
                 target="_blank"
                 className="hover:text-orange-500 transition"
@@ -35,8 +36,8 @@ export default function Footer() {
                   alt="Instagram"
                   className="w-8 h-8"
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://facebook.com"
                 target="_blank"
                 className="hover:text-blue-500 transition"
@@ -46,8 +47,8 @@ export default function Footer() {
                   alt="Facebook"
                   className="w-8 h-8"
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com"
                 target="_blank"
                 className="hover:text-sky-400 transition"
@@ -57,7 +58,7 @@ export default function Footer() {
                   alt="Twitter"
                   className="w-8 h-8"
                 />
-              </a>
+              </Link>
             </div>
           </div>
   
@@ -66,16 +67,16 @@ export default function Footer() {
             <h3 className="text-xl font-semibold">जल्दी पहुंचें</h3>
             <ul className="space-y-2">
               <li className="hover:underline hover:text-orange-400 transition">
-                <a href="/">होम</a>
+                <Link href="/">होम</Link>
               </li>
               <li className="hover:underline hover:text-orange-400 transition">
-                <a href="/about">हमारे बारे में</a>
+                <Link href="/about">हमारे बारे में</Link>
               </li>
               <li className="hover:underline hover:text-orange-400 transition">
-                <a href="/events">इवेंट्स</a>
+                <Link href="/events">इवेंट्स</Link>
               </li>
               <li className="hover:underline hover:text-orange-400 transition">
-                <a href="/album">गैलरी</a>
+                <Link href="/album">गैलरी</Link>
               </li>
             </ul>
           </div>
